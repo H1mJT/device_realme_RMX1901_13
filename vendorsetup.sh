@@ -1,14 +1,16 @@
 # Vendor Tree
 echo 'Cloning Vendor tree [1/4]'
-git clone git@github.com:ashim-anwar/vendor_realme_RMX1901.git -b 13 vendor/realme/RMX1901
+git clone git@github.com:H1mJT/vendor_realme_RMX1901.git vendor/realme/RMX1901
 
-# Kernel Tree
-echo 'Cloning Kernel tree [2/4]'
-git clone git@github.com:ashim-anwar/kernel_realme_RMX1901.git -b x.319 kernel/realme/RMX1901
 
-# Realme In-Screen Proximity Patch
+git clone git@github.com:H1mJT/kernel_realme_RMX1901.git -b upstream kernel/realme/RMX1901
+
+
+
 echo 'Patching Realme In-Screen Proximity [3/4]'
-cd frameworks/base && git fetch git@github.com:ashim-anwar/proximity_patch.git 13 && git cherry-pick f899827fc9d7eb03912362baba1945e5a377fe0e && cd ../..
+# Realme In-Screen Proximity Patch
+cd frameworks/base && git fetch git@github.com:H1mJT/proximity_patch.git && git cherry-pick afb38a0f9f9a612b13b12b901ab9b7f0fffae3de && cd ../..
+
 
 # Use Proton Clang For Compilation
 echo ' Using Proton Clang For Compilation [4/4]'
