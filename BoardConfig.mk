@@ -46,6 +46,7 @@ TARGET_KERNEL_SOURCE := kernel/realme/RMX1901
 TARGET_KERNEL_CONFIG := RMX1901_defconfig
 TARGET_KERNEL_CLANG_VERSION := proton
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-proton
+TARGET_KERNEL_LLVM_BINUTILS := false
 TARGET_KERNEL_ADDITIONAL_FLAGS += \
     HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
