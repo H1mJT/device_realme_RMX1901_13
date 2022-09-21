@@ -1,5 +1,5 @@
 # App Launch Blur
-ro.launcher.blur.appLaunch=false
+ro.launcher.blur.appLaunch=0
 
 # LMKD
 ro.lmk.low=1001
