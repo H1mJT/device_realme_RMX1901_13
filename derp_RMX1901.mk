@@ -23,6 +23,9 @@ TARGET_USES_BLUR := true
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+PRODUCT_SYSTEM_NAME := RMX1901
+PRODUCT_SYSTEM_DEVICE := RMX1901
+
 PRODUCT_BRAND := Realme
 PRODUCT_DEVICE := RMX1901
 PRODUCT_MANUFACTURER := Realme
@@ -33,7 +36,8 @@ PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="raven-user 13 TP1A.221005.002/9012097 release-keys" \
-    PRODUCT_NAME="RMX1901"
+    TARGET_DEVICE=RMX1901 \
+    TARGET_PRODUCT=RMX1901
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := google/raven/raven:13/TP1A.221005.002/9012097:user/release-keys
