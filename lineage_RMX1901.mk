@@ -30,6 +30,8 @@ TARGET_ENABLE_BLUR := true
 # UDFPS ICONS/ANIMATIONS
 TARGET_HAS_UDFPS := true
 
+# Spoof build description/fingerprint as pixel device
+TARGET_USE_PIXEL_FINGERPRINT := true
 
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
