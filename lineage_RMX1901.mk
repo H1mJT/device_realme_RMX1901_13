@@ -21,6 +21,10 @@ RICE_CHIPSET := sdm710
 # gapps build flag, if not defined build type is vanilla
 WITH_GMS := true
 
+# Opt out of google dialer support, compiler will build aosp dialer,
+# package type will change from PIXEL -> GMS
+TARGET_OPTOUT_GOOGLE_TELEPHONY := true
+
 # Sushi Bootanimation (only 720/1080p/1440 supported. if not defined, bootanimation is google bootanimation)
 SUSHI_BOOTANIMATION := 1080
 
