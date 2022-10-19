@@ -37,6 +37,9 @@ TARGET_HAS_UDFPS := true
 # Spoof build description/fingerprint as pixel device
 TARGET_USE_PIXEL_FINGERPRINT := true
 
+# Allow usage of custom binary linker (LD), default is false
+TARGET_KERNEL_OPTIONAL_LD := true
+
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_SUPPORTS_QUICK_TAP := true
