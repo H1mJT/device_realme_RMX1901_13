@@ -20,4 +20,4 @@ git clone git@github.com:H1mJT/realme_dirac packages/apps/RealmeDirac
 
 echo 'Patching Realme In-Screen Proximity [5/5]'
 # Realme In-Screen Proximity Patch
-cd frameworks/base && git fetch git@github.com:H1mJT/proximity_patch.git && git cherry-pick de630e735cdbb68a606d3bbbf8b1674be31bab2d && cd ../..
+cd frameworks/base && git fetch git@github.com:H1mJT/proximity_patch.git && git cherry-pick de630e735cdbb68a606d3bbbf8b1674be31bab2d && git cherry-pick 6c0e9b899bef7b4681b5f0dc7110ca76b35b9a74 && git cherry-pick 48541697c7d13d3bb75633a88382e31cf0bdefb9 && cd ../..
