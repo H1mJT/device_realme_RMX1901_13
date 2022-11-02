@@ -10,7 +10,7 @@ audio.sys.offload.pstimeout.secs=3
 ro.kernel.ebpf.supported=true
 
 # Bluetooth
-ro.bluetooth.wipower=false 
+ro.bluetooth.wipower=false
 ro.bluetooth.emb_wp_mode=false
 persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac-ldac
 vendor.bluetooth.soc=cherokee
@@ -22,24 +22,23 @@ ro.camera.relight.enable=0
 ro.camera.attr.detect.enable=1
 ro.camera.notify_nfc=1
 camera.disable_zsl_mode=true
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
 
 # Charger
 ro.charger.enable_suspend=true
 
 # Data modules
-persist.data.df.dev_name=rmnet_usb0 
-persist.vendor.data.mode=concurrent 
-ro.vendor.use_data_netmgrd=true 
-persist.data.df.agg.dl_pkt=10 
-persist.data.df.agg.dl_size=4096 
-persist.data.df.dl_mode=5 
-persist.data.df.iwlan_mux=9 
-persist.data.df.mux_count=8 
-persist.data.df.ul_mode=5 
-persist.data.netmgrd.qos.enable=true 
-persist.data.profile_update=true 
-persist.data.wda.enable=true 
+persist.data.df.dev_name=rmnet_usb0
+persist.vendor.data.mode=concurrent
+ro.vendor.use_data_netmgrd=true
+persist.data.df.agg.dl_pkt=10
+persist.data.df.agg.dl_size=4096
+persist.data.df.dl_mode=5
+persist.data.df.iwlan_mux=9
+persist.data.df.mux_count=8
+persist.data.df.ul_mode=5
+persist.data.netmgrd.qos.enable=true
+persist.data.profile_update=true
+persist.data.wda.enable=true
 persist.rmnet.data.enable=true
 
 # Display - oppo
@@ -129,26 +128,26 @@ persist.vendor.ims.disableIMSLogs=1
 persist.vendor.ims.disableQXDMLogs=1
 
 # RIL
-DEVICE_PROVISIONED=1 
-persist.radio.multisim.config=dsds 
-persist.vendor.radio.apm_sim_not_pwdn=1 
-persist.vendor.radio.custom_ecc=1 
-persist.vendor.radio.flexmap_type=none 
-persist.vendor.radio.force_on_dc=true 
+DEVICE_PROVISIONED=1
+persist.radio.multisim.config=dsds
+persist.vendor.radio.apm_sim_not_pwdn=1
+persist.vendor.radio.custom_ecc=1
+persist.vendor.radio.flexmap_type=none
+persist.vendor.radio.force_on_dc=true
 persist.vendor.radio.mt_sms_ack=30
-persist.vendor.radio.procedure_bytes=SKIP 
-persist.vendor.radio.rat_on=combine 
-persist.vendor.radio.report_codec=1 
-persist.vendor.radio.sib16_support=1 
-persist.radio.atfwd.start=true 
-persist.vendor.radio.lte_vrte_ltd=1 
-persist.vendor.radio.cs_srv_type=1 
-persist.radio.VT_ENABLE=1 
-persist.radio.volte.dan_support=true 
-persist.data.iwlan=1 
-persist.data.iwlan.ipsec.ap=1 
-persist.sys.cust.lte_config=true 
-service.qti.ims.enabled=1 
+persist.vendor.radio.procedure_bytes=SKIP
+persist.vendor.radio.rat_on=combine
+persist.vendor.radio.report_codec=1
+persist.vendor.radio.sib16_support=1
+persist.radio.atfwd.start=true
+persist.vendor.radio.lte_vrte_ltd=1
+persist.vendor.radio.cs_srv_type=1
+persist.radio.VT_ENABLE=1
+persist.radio.volte.dan_support=true
+persist.data.iwlan=1
+persist.data.iwlan.ipsec.ap=1
+persist.sys.cust.lte_config=true
+service.qti.ims.enabled=1
 persist.vendor.qti.telephony.vt_cam_interface=2
 ro.telephony.iwlan_operation_mode=legacy
 ril.subscription.types=NV,RUIM
@@ -209,4 +208,3 @@ pm.sleep_mode=1
 
 # Disable Skia tracing by default
 debug.hwui.skia_atrace_enabled=false
-
