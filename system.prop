@@ -205,3 +205,7 @@ ro.product.model=RMX1901
 # Battery Saving
 ro.ril.disable.power.collapse=1
 pm.sleep_mode=1
+
+# Disable Skia tracing by default
+debug.hwui.skia_atrace_enabled=false
+
