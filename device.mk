@@ -308,9 +308,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.perf.scroll_opt=true
 
-# Muzix
-PRODUCT_PACKAGES += \
-    Muzix
 
 # Perfd (dummy)
 PRODUCT_PACKAGES += \
