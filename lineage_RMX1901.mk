@@ -36,6 +36,9 @@ TARGET_USE_PIXEL_FINGERPRINT := true
 # Allow usage of custom binary linker (LD), default is false
 TARGET_KERNEL_OPTIONAL_LD := true
 
+# Wether to use google (true) or AOSP (false) telephony package bundle. (defaults: false for gms core, true for pixel builds)
+TARGET_USE_GOOGLE_TELEPHONY := true
+
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_SUPPORTS_QUICK_TAP := true
