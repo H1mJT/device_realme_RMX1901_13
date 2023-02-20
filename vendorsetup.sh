@@ -5,7 +5,7 @@ git clone git@github.com:H1mJT/vendor_realme_RMX1901_13.git vendor/realme/RMX190
 
 #Kernel tree
 echo 'Cloning Kernel tree [2/4]'
-git clone git@github.com:H1mJT/kernel_realme_RMX1901.git -b upstream kernel/realme/RMX1901
+git clone git@github.com:H1mJT/kernel_realme_RMX1901.git -b ksu kernel/realme/RMX1901
 
 
 # Use Proton Clang For Compilation
@@ -15,5 +15,7 @@ git clone --depth=1 https://github.com/kdrag0n/proton-clang.git prebuilts/clang/
 
 echo 'Patching Realme In-Screen Proximity [4/4]'
 # Realme In-Screen Proximity Patch
-cd frameworks/base && git fetch git@github.com:H1mJT/proximity_patch.git && git cherry-pick de630e735cdbb68a606d3bbbf8b1674be31bab2d && git cherry-pick 6c0e9b899bef7b4681b5f0dc7110ca76b35b9a74 && git cherry-pick 48541697c7d13d3bb75633a88382e31cf0bdefb9 && cd ../..
+cd frameworks/base && git fetch git@github.com:H1mJT/proximity_patch.git && git cherry-pick afb38a0f9f9a612b13b12b901ab9b7f0fffae3de && git cherry-pick b369aa03299881cb72a739c445080bb3b1c80b02 && cd ../..
 
+
+cd kernel/realme/RMX1901 && git submodule sync && git submodule update --init --recursive && cd KernelSU && git checkout main && git pull && cd ../../../..
