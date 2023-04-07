@@ -30,9 +30,6 @@ TARGET_ENABLE_BLUR := true
 # UDFPS ICONS/ANIMATIONS
 TARGET_HAS_UDFPS := true
 
-# Spoof build description/fingerprint as pixel device
-TARGET_USE_PIXEL_FINGERPRINT := true
-
 # Allow usage of custom binary linker (LD), default is false
 TARGET_KERNEL_OPTIONAL_LD := true
 
@@ -49,7 +46,7 @@ WITH_FOD_ANIMATIONS := true
 TARGET_USES_BLUR := true
 TARGET_WANTS_FOD_ANIMATIONS := true
 EXTRA_UDFPS_ANIMATIONS := true
-
+TARGET_EXCLUDES_AUDIOFX := true
 
 
 # Inherit from RMX1901 device
@@ -63,8 +60,15 @@ PRODUCT_MODEL := Realme X
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="cheetah-user 13 TQ2A.230305.008.C1 9619669 release-keys" \
     PRODUCT_NAME="RMX1901" \
     TARGET_DEVICE="RMX1901"
 
+# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
+BUILD_FINGERPRINT := google/cheetah/cheetah:13/TQ2A.230305.008.C1/9619669:user/release-keys
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.fingerprint=$(BUILD_FINGERPRINT)
 
