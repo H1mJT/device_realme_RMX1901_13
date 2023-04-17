@@ -13,10 +13,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # maintainer flag (one word only/no spacing)
-RICE_MAINTAINER := HimJT
+RISING_MAINTAINER := HimJT
 
 # chipset flag (one word only/no spacing)
-RICE_CHIPSET := sdm710
+RISING_CHIPSET := sdm710
 
 # gapps build flag, if not defined build type is vanilla
 WITH_GMS := true
