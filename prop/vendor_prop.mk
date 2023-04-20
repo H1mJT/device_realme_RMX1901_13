@@ -127,6 +127,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.display.cabl=2 \
     vendor.display.disable_rotator_downscale=1
 
+# Dolby
+persist.vendor.audio_fx.current=dolby
+ro.vendor.dolby.dax.version=DS1_2.2.0.0_r1
+vendor.audio.dolby.ds2.enabled=true
+vendor.audio.dolby.ds2.hardbypass=true
+
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true

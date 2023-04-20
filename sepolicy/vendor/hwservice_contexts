@@ -28,3 +28,6 @@ vendor.qti.diaghal::Idiag                                            u:object_r:
 
 # vpp
 ::vppService						u:object_r:hal_vpp_hwservice:s0
+
+# Dolby
+vendor.dolby.hardware.dms::IDms                                            u:object_r:hal_dms_hwservice:s0
