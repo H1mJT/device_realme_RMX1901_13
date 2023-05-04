@@ -40,6 +40,7 @@ TARGET_EXCLUDES_APERTURE := false
 # Wether to use google (true) or AOSP (false) telephony package bundle. (defaults: false for gms core, true for pixel builds)
 TARGET_USE_GOOGLE_TELEPHONY := true
 
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 TARGET_EXCLUDES_SEEDVAULT := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
